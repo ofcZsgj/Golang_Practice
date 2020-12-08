@@ -1,0 +1,4 @@
+# github.com/go-sql-driver/mysql v1.5.0
+## explicit
+github.com/go-sql-driver/mysql
+# google.golang.org/grpc => github.com/grpc/grpc-go v1.34.0
