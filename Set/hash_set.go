@@ -1,4 +1,4 @@
-package main
+package set
 
 import (
 	"bytes"
@@ -7,18 +7,6 @@ import (
 
 type HashSet struct {
 	m map[interface{}]bool
-}
-
-type Set interface {
-	Add(e interface{}) bool
-	Delete(e interface{})
-	Clear()
-	Contains(e interface{}) bool
-	Len() int
-	//不能在接口类型的方法中包含它的实现类型，即修改Same方法前面让*HashSet类型成为Set接口类型的一个实现
-	Same(other Set) bool//func (set *HashSet) Element() []interface{}
-	Element() []interface{}
-	String() string
 }
 
 //初始化
@@ -107,27 +95,6 @@ func (set *HashSet) String() string {
 	}
 	buf.WriteString("}")
 	return buf.String()
-}
-
-//是否真包含
-func (set *HashSet) IsSuperset(other *HashSet) bool {
-	if other == nil {
-		return false
-	}
-	oneLen := set.Len()
-	otherLen := other.Len()
-	if oneLen == 0 || oneLen == otherLen {
-		return false
-	}
-	if oneLen > 0 && otherLen == 0 {
-		return true
-	}
-	for _, v := range other.Element() {
-		if !set.Contains(v) {
-			return false
-		}
-	}
-	return true
 }
 
 
