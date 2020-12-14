@@ -50,15 +50,16 @@
     <property name="go.import.settings.migrated" value="true" />
     <property name="go.sdk.automatically.set" value="true" />
     <property name="go.tried.to.enable.integration.vgo.integrator" value="true" />
+    <property name="go.vendoring.notification.had.been.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="go.vgo" />
+    <property name="settings.editor.selected.configurable" value="watcher.settings" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\GolangPractice\conn-mysql" />
     </key>
   </component>
-  <component name="RunManager" selected="Go 构建.go build redis_conn.go">
+  <component name="RunManager" selected="Go 构建.go build main.go">
     <configuration name="go build GolangPractice/conn-mysql" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="GolangPractice" />
       <working_directory value="$PROJECT_DIR$" />
@@ -77,20 +78,20 @@
       <directory value="$PROJECT_DIR$" />
       <method v="2" />
     </configuration>
+    <configuration name="go build main.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="GolangPractice" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="FILE" />
+      <filePath value="$PROJECT_DIR$/gorm/main.go" />
+      <package value="GolangPractice" />
+      <directory value="$PROJECT_DIR$" />
+      <method v="2" />
+    </configuration>
     <configuration name="go build mysql_conn.go (1)" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="GolangPractice" />
       <working_directory value="$PROJECT_DIR$" />
       <kind value="FILE" />
       <filePath value="$PROJECT_DIR$/conn-mysql/mysql_conn.go" />
-      <package value="GolangPractice" />
-      <directory value="$PROJECT_DIR$" />
-      <method v="2" />
-    </configuration>
-    <configuration name="go build mysql_conn.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
-      <module name="GolangPractice" />
-      <working_directory value="$PROJECT_DIR$" />
-      <kind value="FILE" />
-      <filePath value="$PROJECT_DIR$/conn-redis/mysql_conn.go" />
       <package value="GolangPractice" />
       <directory value="$PROJECT_DIR$" />
       <method v="2" />
@@ -106,11 +107,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Go 构建.go build main.go" />
         <item itemvalue="Go 构建.go build redis_conn.go" />
         <item itemvalue="Go 构建.go build GolangPractice/conn-redis" />
         <item itemvalue="Go 构建.go build mysql_conn.go (1)" />
         <item itemvalue="Go 构建.go build GolangPractice/conn-mysql" />
-        <item itemvalue="Go 构建.go build mysql_conn.go" />
       </list>
     </recent_temporary>
   </component>
@@ -137,32 +138,49 @@
   </component>
   <component name="VgoProject">
     <integration-enabled>true</integration-enabled>
+    <environment>
+      <map>
+        <entry key="GOPROXY" value="https://mirrors.aliyun.com/goproxy/" />
+      </map>
+    </environment>
   </component>
   <component name="WindowStateProjectService">
     <state x="558" y="192" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1607404695474">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="558" y="192" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1607404695474" />
-    <state width="980" height="96" key="GridCell.Tab.0.bottom" timestamp="1607418539534">
+    <state x="998" y="368" key="EditFileWatcherDialog" timestamp="1607922194438">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="980" height="96" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1607418539534" />
-    <state width="980" height="96" key="GridCell.Tab.0.center" timestamp="1607418539534">
+    <state x="998" y="368" key="EditFileWatcherDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1607922194438" />
+    <state x="856" y="416" key="EnvironmentVariablesDialog" timestamp="1607420215906">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="980" height="96" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1607418539534" />
-    <state width="980" height="96" key="GridCell.Tab.0.left" timestamp="1607418539533">
+    <state x="856" y="416" key="EnvironmentVariablesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1607420215906" />
+    <state x="740" y="274" key="FileChooserDialogImpl" timestamp="1607474436728">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="980" height="96" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1607418539533" />
-    <state width="980" height="96" key="GridCell.Tab.0.right" timestamp="1607418539534">
+    <state x="740" y="274" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1607474436728" />
+    <state width="920" height="218" key="GridCell.Tab.0.bottom" timestamp="1607936807207">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="980" height="96" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1607418539534" />
-    <state x="922" y="164" key="SettingsEditor" timestamp="1607395020406">
+    <state width="920" height="218" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1607936807207" />
+    <state width="920" height="218" key="GridCell.Tab.0.center" timestamp="1607936807207">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="922" y="164" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1607395020406" />
+    <state width="920" height="218" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1607936807207" />
+    <state width="920" height="218" key="GridCell.Tab.0.left" timestamp="1607936807207">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="920" height="218" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1607936807207" />
+    <state width="920" height="218" key="GridCell.Tab.0.right" timestamp="1607936807207">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="920" height="218" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1607936807207" />
+    <state x="823" y="236" key="SettingsEditor" timestamp="1607922197696">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="823" y="236" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1607922197696" />
     <state x="552" y="252" key="Vcs.Push.Dialog.v2" timestamp="1607392218727">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
